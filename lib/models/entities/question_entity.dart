@@ -4,13 +4,13 @@ import 'package:english_test/models/entities/title_question_entity.dart';
 class QuestionEntity {
   final TitleQuestionEntity titleQuestionEntity;
   final List<AnswerQuestionEntity> listAnswer;
-  final String answerSelected;
+  final String? answerSelected;
   final bool isCheck;
 
   QuestionEntity({
     required this.titleQuestionEntity,
     required this.listAnswer,
-    required this.answerSelected,
+    this.answerSelected,
     required this.isCheck,
   });
 }
